@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6ea8d6; /* Darker blue */
+    padding: 10px 20px;
+  }
+  
+  .navbar-initials {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  

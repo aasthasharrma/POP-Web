@@ -1,0 +1,148 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative; /* Ensure the container is positioned */
+  overflow: hidden; /* Prevents overflow of shapes */
+}
+
+.home-container::before,
+.home-container::after,
+.home-container .shape {
+  content: '';
+  position: absolute;
+  background: rgba(110, 168, 214, 0.3); /* Same color as the navbar with transparency */
+  z-index: -1; /* Place behind content */
+}
+
+/* Various shapes in the background */
+.home-container::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  /* Different shapes */
+  border-radius: 10px;
+}
+
+/* Triangle shape */
+.shape.triangle {
+  width: 200px;
+  height: 200px;
+  top: 20px; /* Position it as needed */
+  left: 50px; /* Position it as needed */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Slanted rectangle shape */
+.shape.slanted {
+  width: 300px;
+  height: 150px;
+  top: 100px; /* Position it as needed */
+  right: 100px; /* Position it as needed */
+  transform: rotate(10deg);
+}
+
+/* Circle shape */
+.shape.circle {
+  width: 250px;
+  height: 250px;
+  top: 200px; /* Position it as needed */
+  left: 30%; /* Centering */
+  clip-path: circle(50%);
+}
+
+/* Slanted triangle shape */
+.shape.slanted-triangle {
+  width: 200px;
+  height: 200px;
+  top: 300px; /* Position it as needed */
+  left: 20%; /* Position it as needed */
+  transform: rotate(45deg);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Additional shapes */
+.shape.rect {
+  width: 150px;
+  height: 100px;
+  top: 350px; /* Position it as needed */
+  right: 150px; /* Position it as needed */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.welcome-text {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0;
+  animation: slideIn 1.5s ease-out;
+  color: #6ea8d6;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 365px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-me-box {
+  width: 300px;
+  height: 320px;
+  border: 3px solid #6ea8d6;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.about-me-box h2 {
+  color: #6ea8d6;
+  margin-bottom: 10px;
+}
+
+.about-me-box p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* New CSS for the three boxes */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Full width of the container */
+  margin-top: 30px;
+}
+
+.info-box {
+  flex: 1; /* Distribute space evenly */
+  margin: 0 10px; /* Space between the boxes */
+  border: 3px solid #6ea8d6; /* Border color matches the navbar */
+  padding: 20px;
+  background-color: transparent;
+}
+
+.info-box h3 {
+  color: #6ea8d6; /* Title color */
+  margin-bottom: 10px;
+}
