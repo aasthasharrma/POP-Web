@@ -1,0 +1,147 @@
+/* Projects.css */
+
+.projects-container {
+    padding: 3rem 5%; /* Reduced padding to make the content wider */
+    background: linear-gradient(135deg, #b89ef5, #1e1e2f); /* Purple to darker gradient */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-box {
+    width: 100%; /* Takes the full width of the container */
+    max-width: 1200px; /* Ensures a maximum width for large screens */
+    background-color: rgba(30, 30, 47, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-header h1 {
+    font-size: 2.5rem;
+    color: #d1c4fc; /* Light purple */
+  }
+  
+  .projects-header p {
+    font-size: 1.2rem;
+    color: #bdbdbd;
+    margin-top: 1rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between image and text */
+    gap: 2rem;
+  }
+  
+  .project-image img {
+    width: 400px; /* Increased image size */
+    height: 250px; /* Increased height */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px #b89ef5;
+  }
+  
+  .project-details {
+    flex: 1;
+  }
+  
+  .project-details h2 {
+    font-size: 2rem;
+    color: #d1c4fc; /* Light purple */
+  }
+  
+  .project-details h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #fff;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    color: #bdbdbd;
+  }
+  
+  .read-more-button {
+    background-color: #b89ef5;
+    color: #1e1e2f;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: #d1c4fc; /* Slightly lighter purple */
+    color: #fff;
+  }
+  
+  .section-divider {
+    border: none;
+    border-top: 2px solid #b89ef5; /* Purple divider line */
+    margin: 2rem 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .projects-container {
+      padding: 2rem;
+    }
+  
+    .project-item {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .project-image img {
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Auto height for better scaling */
+    }
+  
+    .project-details {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-box {
+      padding: 2rem;
+    }
+  
+    .projects-header h1 {
+      font-size: 2rem;
+    }
+  
+    .projects-header p {
+      font-size: 1rem;
+    }
+  
+    .project-details h2 {
+      font-size: 1.5rem;
+    }
+  
+    .read-more-button {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  

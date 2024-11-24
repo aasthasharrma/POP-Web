@@ -1,55 +1,45 @@
-import React from 'react';
-import './Home.css';
-import pic2 from '../files/pic2.jpg'; // Adjust the path as needed
+import React from "react";
+import "./Home.css";
+import pic2 from "../files/pic2.jpg";
 
 function Home() {
   return (
     <div className="home-container">
-      {/* Background Shapes */}
-      <div className="shape triangle"></div>
-      <div className="shape slanted"></div>
-      <div className="shape circle"></div>
-      <div className="shape slanted-triangle"></div>
-      <div className="shape rect"></div>
+      <div className="content-box animate">
+        {/* Left Side: Text Content */}
+        <div className="intro">
+          <p className="greeting">Hello, it's Me</p>
+          <h1>Aastha Sharma</h1>
+          <h2>And I'm a Full Stack Developer</h2>
+          <p>A Computer Science student at the University of Texas at Dallas</p>
+          <div className="social-links">
+            <a href="https://github.com/aasthasharrma" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/aastha-sharma-21377b278/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a href="mailto:aasthatx@gmail.com" target="_blank" rel="noopener noreferrer">
+              Email
+            </a>
+          </div>
+          <div className="Watch For More">
+            <a
+              href="https://youtube.com/shorts/XSX4CPaEWgI" // Replace with the actual link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-cv-button"
+            >
+              Watch
+            </a>
+          </div>
+        </div>
 
-      <h1 className="welcome-text">Hello, I'm Aastha Sharma</h1>
-      <div className="content-container">
-        <img src={pic2} alt="Aastha" className="profile-picture" />
-        <div className="about-me-box">
-          <h2>About Me</h2>
-          <p>
-            I am a passionate individual with a deep interest in computer science and technology. 
-            I enjoy creating innovative projects, solving complex problems, and collaborating with 
-            others to learn and grow. My journey is fueled by curiosity and the desire to make an 
-            impact in the world of tech.
-          </p>
-        </div>
-      </div>
-      <div className="info-section">
-        <div className="info-box">
-          <h3>Awards</h3>
-          <ul>
-            <li>Mock Trial Area Semi-Finalist</li>
-            <li>Academic Excellence Scholar</li>
-            <li>AP Scholar With Distinction</li>
-          </ul>
-        </div>
-        <div className="info-box">
-          <h3>Skills</h3>
-          <ul>
-            <li>Python</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-          </ul>
-        </div>
-        <div className="info-box">
-          <h3>Education</h3>
-          <ul>
-            <li>Bachelor's in Computer Science @ UTD</li>
-            <li>Centennial High School 2020-2024</li>
-          </ul>
+        {/* Right Side: Circular Profile Picture */}
+        <div className="profile-picture">
+          <div className="neon-circle">
+            <img src={pic2} alt="Your Profile" />
+          </div>
         </div>
       </div>
     </div>

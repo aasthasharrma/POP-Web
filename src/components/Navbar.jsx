@@ -1,29 +1,30 @@
-import React from 'react';
-import './Navbar.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <span className="navbar-initials">AS</span>
+      <div className="logo">
+        <h1>Aastha Sharma</h1>
       </div>
-      <div className="navbar-center">
-        <ul className="navbar-links">
-          <li>About</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div className="navbar-right">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="icon" />
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="icon" />
-        </a>
-      </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/resume">Resume</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
     </nav>
   );
 }
