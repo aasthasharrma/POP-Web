@@ -14,8 +14,8 @@ import './App.css'; // Main CSS file
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+    <Router basename="/POP-Web">
+      <Navbar/>
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} exact />
