@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/POP-Web/static/css/main.0a5c742c.css",
+    "main.js": "/POP-Web/static/js/main.0f0f68fb.js",
+    "static/js/453.1515c532.chunk.js": "/POP-Web/static/js/453.1515c532.chunk.js",
+    "static/media/fam1.png": "/POP-Web/static/media/fam1.64c812cd75d2b6c3c63e.png",
+    "static/media/fam3.png": "/POP-Web/static/media/fam3.1847e49088f5a25edce6.png",
+    "static/media/contact.png": "/POP-Web/static/media/contact.4b0d6df5e1bde7dd3824.png",
+    "static/media/cs.png": "/POP-Web/static/media/cs.75197d4900c37b774b3e.png",
+    "static/media/presentation.pdf": "/POP-Web/static/media/presentation.3c5a6e9391f0dd0abe84.pdf",
+    "static/media/email5.png": "/POP-Web/static/media/email5.8a49ad93f3f06bd9b3f3.png",
+    "static/media/email1.png": "/POP-Web/static/media/email1.2d91d3f033ca93fda1bc.png",
+    "static/media/email4.png": "/POP-Web/static/media/email4.f5ddbbcd47734a967812.png",
+    "static/media/pic2.jpg": "/POP-Web/static/media/pic2.4f7fdc951075f29d0820.jpg",
+    "static/media/TechResume3PDF.pdf": "/POP-Web/static/media/TechResume3PDF.1bb73ecd0232af920d3d.pdf",
+    "static/media/review2.pdf": "/POP-Web/static/media/review2.229b0801f2cd0349ff1f.pdf",
+    "static/media/graph2.png": "/POP-Web/static/media/graph2.202bf5ecfceb97fa30b6.png",
+    "static/media/graph1.png": "/POP-Web/static/media/graph1.e54f90e501af156eb381.png",
+    "static/media/review1.pdf": "/POP-Web/static/media/review1.c0b2de37a2f12e4668e5.pdf",
+    "index.html": "/POP-Web/index.html",
+    "main.0a5c742c.css.map": "/POP-Web/static/css/main.0a5c742c.css.map",
+    "main.0f0f68fb.js.map": "/POP-Web/static/js/main.0f0f68fb.js.map",
+    "453.1515c532.chunk.js.map": "/POP-Web/static/js/453.1515c532.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a5c742c.css",
+    "static/js/main.0f0f68fb.js"
+  ]
+}
