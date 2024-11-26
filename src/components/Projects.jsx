@@ -84,7 +84,7 @@ function Projects() {
               <h2>04</h2>
               <h3>Peer Feedback</h3>
               <p>
-               During this project, I was able to get valuable insights about my presentation skills, as well as advice to refine my work through contructive critisism. 
+               During my BCOM 3300 class, I was able to get valuable insights about my presentation skills, as well as advice to refine my work through contructive critisism. 
               </p>
               <Link to="/projects/project4" className="read-more-button">
                 Read More &rarr;

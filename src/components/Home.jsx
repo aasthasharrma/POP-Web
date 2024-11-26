@@ -1,25 +1,46 @@
 import React from "react";
+import { ReactTyped } from "react-typed"; // Correct import
 import "./Home.css";
 import pic2 from "../files/pic2.jpg";
 
 function Home() {
   return (
     <div className="home-container">
-      <div className="content-box animate">
+      <div className="content-box home-animate">
         {/* Left Side: Text Content */}
         <div className="intro">
           <p className="greeting">Hello, it's Me</p>
           <h1>Aastha Sharma</h1>
-          <h2>And I'm a Full Stack Developer</h2>
+          <h2>
+            And I'm a{" "}
+            <ReactTyped
+              strings={["Full Stack Developer", "Student", "Leader", "Programmer"]}
+              typeSpeed={80}
+              backSpeed={80}
+              loop
+            />
+          </h2>
           <p>A Computer Science student at the University of Texas at Dallas</p>
           <div className="social-links">
-            <a href="https://github.com/aasthasharrma" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/aasthasharrma"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/aastha-sharma-21377b278/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/aastha-sharma-21377b278/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </a>
-            <a href="mailto:aasthatx@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:aasthatx@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Email
             </a>
           </div>

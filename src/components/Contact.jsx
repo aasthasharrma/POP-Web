@@ -52,7 +52,7 @@ function Contact() {
           <h2>Let's Chat</h2>
           <div className="contact-info">
             <p>
-              <strong>Phone:</strong> (469)-619-39990
+              <strong>Phone:</strong> (469)-619-3990
             </p>
             <p>
               <a href="mailto:aasthatx@gmail.com" target="_blank" rel="noreferrer">

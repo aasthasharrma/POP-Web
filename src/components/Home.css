@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+/* Gradient animation for background */
 @keyframes gradientBackground {
   0% {
     background-position: 0% 50%;
@@ -24,14 +25,15 @@
   }
 }
 
-/* Animate content-box */
-.animate {
+/* Animation specific to Home page */
+.home-animate {
   opacity: 0;
   transform: translateY(50px);
-  animation: slideIn 1.5s ease-out forwards;
+  animation: slideInHome 1.5s ease-out forwards;
 }
 
-@keyframes slideIn {
+/* Slide-in and fade-in animation */
+@keyframes slideInHome {
   0% {
     opacity: 0;
     transform: translateY(50px);
@@ -42,14 +44,22 @@
   }
 }
 
+/* Content Box Styles */
 .content-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
+  background-color: rgba(30, 30, 47, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+
+  /* Ensure the final state is always visible */
+  opacity: 1;
+  transform: translateY(0);
 }
 
+/* Text Content */
 .intro {
   flex: 1;
   text-align: left;
@@ -80,6 +90,7 @@
   line-height: 1.5;
 }
 
+/* Social Links */
 .social-links {
   display: flex;
   gap: 1rem;
@@ -100,10 +111,7 @@
   color: #1e1e2f;
 }
 
-.download-cv-container {
-  margin-top: 1rem;
-}
-
+/* Button Styles */
 .download-cv-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;

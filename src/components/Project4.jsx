@@ -5,7 +5,7 @@ function Project4() {
   return (
     <div className="project-detail-container">
       <div className="content-box">
-        <h1>Project Title 4</h1>
+        <h1>Description</h1>
         <p className="description">
           Throughout our BCOM 3300 class, we actively engaged in giving and
           receiving constructive criticism to foster mutual improvement. With
@@ -26,7 +26,7 @@ function Project4() {
         <div className="pdf-gallery">
           {/* Review Document 1 */}
           <div className="pdf-item">
-            <h2>Review Document 1</h2>
+            <h2>Given Review</h2>
             <embed
               src={require("../files/review1.pdf")}
               type="application/pdf"
@@ -37,7 +37,7 @@ function Project4() {
 
           {/* Review Document 2 */}
           <div className="pdf-item">
-            <h2>Review Document 2</h2>
+            <h2>Received Review</h2>
             <embed
               src={require("../files/review2.pdf")}
               type="application/pdf"

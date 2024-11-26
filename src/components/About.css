@@ -6,12 +6,22 @@
   color: #fff;
   min-height: 100vh;
   text-align: center;
+  overflow: hidden; /* Prevent scrolling during animation */
 }
 
 .about-header {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #d1c4fc; /* Light purple */
+}
+
+.about-container-box {
+  border: 3px solid #d1c4fc; /* Light purple border for the container */
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: rgba(30, 30, 47, 0.9); /* Slightly transparent background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  animation: slideInFromBottom 1.5s ease-in-out; /* Slide-in animation */
 }
 
 .about-grid {
@@ -85,14 +95,22 @@
   margin: 0 auto;
 }
 
+/* Slide-in Animation for Container */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .about-grid {
     gap: 1rem; /* Adjust grid gap for smaller screens */
-  }
-
-  .about-card {
-    height: 350px; /* Reduce card height slightly */
   }
 }
 

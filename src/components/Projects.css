@@ -10,15 +10,30 @@
     align-items: center;
   }
   
+/* New animation for sliding up and fading in */
+@keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Add animation to the content-box */
   .content-box {
-    width: 100%; /* Takes the full width of the container */
-    max-width: 1200px; /* Ensures a maximum width for large screens */
+    width: 100%;
+    max-width: 1200px;
     background-color: rgba(30, 30, 47, 0.95);
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out; /* Add animation here */
   }
+  
   
   .projects-header {
     text-align: center;
@@ -144,4 +159,11 @@
       padding: 0.5rem 0.8rem;
     }
   }
+  .section-divider {
+    border: none;
+    border-top: 2px solid #b89ef5; /* Purple line for separation */
+    margin: 2rem 0; /* Add space around the line */
+    width: 100%; /* Make sure the line spans the full width */
+  }
+  
   
