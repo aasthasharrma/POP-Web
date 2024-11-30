@@ -14,7 +14,7 @@ import './App.css'; // Main CSS file
 
 function App() {
   return (
-    <Router basename="/POP-Web">
+    <Router basename="/">
       <Navbar/>
       <div className="content">
         <Routes>
