@@ -1,6 +1,6 @@
 import React from "react";
 import "./Resume.css";
-import resumePDF from "../files/TechResume3PDF.pdf"; // Ensure your resume is in the src/files folder
+import resumePDF from "../files/JSOMResume.pdf"; // Ensure your resume is in the src/files folder
 
 function Resume() {
   return (
