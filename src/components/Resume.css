@@ -1,73 +1,122 @@
-/* Resume.css */
-
 .resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #b89ef5, #1e1e2f); /* Purple to darker gradient */
-    padding: 0 10%;
-    color: #fff;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, white, #b89ef5); /* Same gradient as Home */
+  padding: 0 10%;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Removed Semi-Transparent Box */
+.content-box {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  
-  .content-box {
-    background-color: rgba(30, 30, 47, 0.95); /* Semi-transparent dark box */
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    max-width: 80%;
-    width: 100%;
-    min-height: 70%;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .resume-text {
-    text-align: center;
+}
+
+.resume-text {
+  margin-bottom: 2rem;
+}
+
+.resume-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6a0dad; /* Vibrant purple for visibility */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Subtle shadow for readability */
+}
+
+.resume-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e0e0e0; /* Light gray for readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+}
+
+/* Download Button */
+.download-button {
+  background-color: #6a5acd;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #b89ef5;
+  box-shadow: 0 0 10px #d1c4fc;
+}
+
+/* Resume Preview */
+.resume-preview {
+  width: 100%;
+  border: 2px solid #6a5acd; /* Purple border */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.resume-preview embed {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .resume-container {
+    padding: 2rem;
   }
-  
+
+  .resume-preview embed {
+    height: 500px; /* Adjust height for smaller screens */
+  }
+
   .resume-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #d1c4fc; /* Light purple */
+    font-size: 2rem;
   }
-  
+
   .resume-text p {
     font-size: 1rem;
-    line-height: 1.8;
-    color: #bdbdbd;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .resume-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .resume-text p {
+    font-size: 0.9rem;
+  }
+
   .download-button {
-    background-color: #b89ef5;
-    color: #1e1e2f;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
-  
-  .download-button:hover {
-    background-color: #d1c4fc; /* Slightly lighter purple */
-    color: #fff;
-    box-shadow: 0 0 10px #d1c4fc;
-  }
-  
-  .resume-preview {
-    width: 100%;
-    border: 2px solid #b89ef5;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
+
   .resume-preview embed {
-    border-radius: 10px;
+    height: 400px; /* Further reduce height for smaller screens */
   }
-  
+}

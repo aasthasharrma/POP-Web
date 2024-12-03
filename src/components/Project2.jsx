@@ -29,6 +29,13 @@ function Project2() {
               width="100%"
               height="400px"
             />
+            <a
+              href={require("../files/email1.pdf")}
+              download="Response.pdf"
+              className="download-button"
+            >
+              Download Response
+            </a>
           </div>
           <div className="pdf-item">
             <h2>Comments</h2>
@@ -38,6 +45,13 @@ function Project2() {
               width="100%"
               height="400px"
             />
+            <a
+              href={require("../files/email4.pdf")}
+              download="Comments.pdf"
+              className="download-button"
+            >
+              Download Comments
+            </a>
           </div>
           <div className="pdf-item">
             <h2>Feedback</h2>
@@ -47,6 +61,13 @@ function Project2() {
               width="100%"
               height="400px"
             />
+            <a
+              href={require("../files/email5.pdf")}
+              download="Feedback.pdf"
+              className="download-button"
+            >
+              Download Feedback
+            </a>
           </div>
         </div>
       </div>

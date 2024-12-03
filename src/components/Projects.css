@@ -1,169 +1,170 @@
-/* Projects.css */
-
 .projects-container {
-    padding: 3rem 5%; /* Reduced padding to make the content wider */
-    background: linear-gradient(135deg, #b89ef5, #1e1e2f); /* Purple to darker gradient */
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  padding: 3rem 5%;
+  background: linear-gradient(180deg, white, #b89ef5); /* Same gradient as Home */
+  color: #fff; /* White text for consistency */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* New animation for sliding up and fading in */
 @keyframes fadeInUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  
-  /* Add animation to the content-box */
-  .content-box {
-    width: 100%;
-    max-width: 1200px;
-    background-color: rgba(30, 30, 47, 0.95);
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    animation: fadeInUp 1s ease-in-out; /* Add animation here */
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  
-  .projects-header {
+}
+
+/* Content Box - Removed background box style */
+.content-box {
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Header Styling */
+.projects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-header h1 {
+  font-size: 2.5rem;
+  color: #6a0dad; /* Vibrant purple for visibility */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Subtle shadow for readability */
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  color: #e0e0e0; /* Light gray for text readability */
+  margin-top: 1rem;
+}
+
+/* Project List */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Project Item */
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between image and text */
+  gap: 2rem;
+}
+
+.project-image img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #6a5acd; /* Purple glow for consistency */
+}
+
+/* Project Details */
+.project-details {
+  flex: 1;
+  color: #e0e0e0; /* Light gray for readability */
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  color: #6a0dad; /* Vibrant purple for visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for readability */
+}
+
+.project-details h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #fff; /* White text for consistency */
+}
+
+.project-details p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+  color: #e0e0e0; /* Light gray text for readability */
+}
+
+/* Read More Button */
+.read-more-button {
+  background-color: #6a5acd;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #b89ef5;
+  color: #fff;
+}
+
+/* Section Divider */
+.section-divider {
+  border: none;
+  border-top: 2px solid #6a5acd; /* Purple divider line */
+  margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-container {
+    padding: 2rem;
+  }
+
+  .project-item {
+    flex-direction: column; /* Stack items vertically */
     text-align: center;
-    margin-bottom: 2rem;
   }
-  
-  .projects-header h1 {
-    font-size: 2.5rem;
-    color: #d1c4fc; /* Light purple */
+
+  .project-image img {
+    width: 100%;
+    height: auto;
   }
-  
-  .projects-header p {
-    font-size: 1.2rem;
-    color: #bdbdbd;
+
+  .project-details {
     margin-top: 1rem;
   }
-  
-  .project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    padding: 2rem;
   }
-  
-  .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between image and text */
-    gap: 2rem;
-  }
-  
-  .project-image img {
-    width: 400px; /* Increased image size */
-    height: 250px; /* Increased height */
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 0 10px #b89ef5;
-  }
-  
-  .project-details {
-    flex: 1;
-  }
-  
-  .project-details h2 {
+
+  .projects-header h1 {
     font-size: 2rem;
-    color: #d1c4fc; /* Light purple */
   }
-  
-  .project-details h3 {
+
+  .projects-header p {
+    font-size: 1rem;
+  }
+
+  .project-details h2 {
     font-size: 1.5rem;
-    margin-top: 0.5rem;
-    color: #fff;
   }
-  
-  .project-details p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin: 1rem 0;
-    color: #bdbdbd;
-  }
-  
+
   .read-more-button {
-    background-color: #b89ef5;
-    color: #1e1e2f;
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
   }
-  
-  .read-more-button:hover {
-    background-color: #d1c4fc; /* Slightly lighter purple */
-    color: #fff;
-  }
-  
-  .section-divider {
-    border: none;
-    border-top: 2px solid #b89ef5; /* Purple divider line */
-    margin: 2rem 0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .projects-container {
-      padding: 2rem;
-    }
-  
-    .project-item {
-      flex-direction: column; /* Stack items vertically */
-      text-align: center;
-    }
-  
-    .project-image img {
-      width: 100%; /* Full width for smaller screens */
-      height: auto; /* Auto height for better scaling */
-    }
-  
-    .project-details {
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .content-box {
-      padding: 2rem;
-    }
-  
-    .projects-header h1 {
-      font-size: 2rem;
-    }
-  
-    .projects-header p {
-      font-size: 1rem;
-    }
-  
-    .project-details h2 {
-      font-size: 1.5rem;
-    }
-  
-    .read-more-button {
-      font-size: 0.9rem;
-      padding: 0.5rem 0.8rem;
-    }
-  }
-  .section-divider {
-    border: none;
-    border-top: 2px solid #b89ef5; /* Purple line for separation */
-    margin: 2rem 0; /* Add space around the line */
-    width: 100%; /* Make sure the line spans the full width */
-  }
-  
-  
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #6a5acd;
+  margin: 2rem 0;
+  width: 100%;
+}

@@ -1,19 +1,33 @@
+/* Navbar container */
 .navbar {
+  height: 60px; /* Adjust as needed */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
-  padding: 1rem 10%;
+  background: linear-gradient(90deg, #5a4cc1, #6a11cb, #271d5f);
+  padding: 0 10%;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.logo h1 {
-  font-size: 1.5rem;
-  color: #b89ef5;
+/* Logo link styling */
+.logo-link {
+  text-decoration: none; /* Remove underline from the logo link */
 }
 
+.logo h1 {
+  font-size: 2rem; /* Increased size */
+  color: #ffffff;
+  transition: transform 0.3s ease, font-weight 0.3s ease; /* Animation on hover */
+}
+
+.logo h1:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  font-weight: bold; /* Make bold on hover */
+}
+
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -23,13 +37,37 @@
   list-style: none;
 }
 
+/* Link styles */
 .nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
   text-decoration: none;
-  color: #bdbdbd;
+  color: #ffffff;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; /* Underline effect */
 }
 
 .nav-links a:hover {
-  color: #b89ef5;
+  color: #ffe6f7;
+  border-bottom: 2px solid #ffe6f7; /* Add underline on hover */
+}
+
+/* Active link styling */
+.nav-links a.active {
+  color: #ffe6f7; /* Highlight active link */
+  border-bottom: 2px solid #ffe6f7; /* Underline active link */
+}
+
+/* Icon styles */
+.nav-icon {
+  font-size: 1.2rem; /* Icon size */
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover .nav-icon,
+.nav-links a.active .nav-icon {
+  color: #ffe6f7; /* Change icon color on hover/active */
 }

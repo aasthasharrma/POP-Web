@@ -33,6 +33,13 @@ function Project4() {
               title="Review Document 1"
               className="pdf-embed"
             />
+            <a
+              href={require("../files/review1.pdf")}
+              download="Given_Review.pdf"
+              className="download-button"
+            >
+              Download Given Review
+            </a>
           </div>
 
           {/* Review Document 2 */}
@@ -44,6 +51,13 @@ function Project4() {
               title="Review Document 2"
               className="pdf-embed"
             />
+            <a
+              href={require("../files/review2.pdf")}
+              download="Received_Review.pdf"
+              className="download-button"
+            >
+              Download Received Review
+            </a>
           </div>
         </div>
       </div>

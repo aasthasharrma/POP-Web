@@ -9,7 +9,7 @@ function Home() {
       <div className="content-box home-animate">
         {/* Left Side: Text Content */}
         <div className="intro">
-          <p className="greeting">Hello, it's Me</p>
+          <p className="greeting">Hello, it's Me,</p>
           <h1>Aastha Sharma</h1>
           <h2>
             And I'm a{" "}

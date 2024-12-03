@@ -2,8 +2,8 @@
 
 .about-container {
   padding: 3rem 10%;
-  background: linear-gradient(135deg, #b89ef5, #1e1e2f); /* Purple to darker gradient */
-  color: #fff;
+  background: linear-gradient(180deg, white, #b89ef5); /* Same gradient as Home */
+  color: #333; /* Adjusted text color for contrast */
   min-height: 100vh;
   text-align: center;
   overflow: hidden; /* Prevent scrolling during animation */
@@ -12,14 +12,15 @@
 .about-header {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #d1c4fc; /* Light purple */
+  color: #6a0dad; /* Vibrant purple for better visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for visibility */
 }
 
 .about-container-box {
-  border: 3px solid #d1c4fc; /* Light purple border for the container */
+  border: 3px solid #6a5acd; /* Dark purple border for the container */
   padding: 1.5rem;
   border-radius: 20px;
-  background: rgba(30, 30, 47, 0.9); /* Slightly transparent background */
+  background: rgba(255, 255, 255, 0.85); /* Lighter background for better readability */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   animation: slideInFromBottom 1.5s ease-in-out; /* Slide-in animation */
 }
@@ -39,6 +40,7 @@
   height: 400px; /* Set a fixed height */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.9); /* Lighter card background for contrast */
 }
 
 .about-card:hover {
@@ -77,22 +79,24 @@
 
 .about-text {
   text-align: center;
-  color: #fff;
+  color: #333; /* Darker text color for readability */
   padding: 1rem;
 }
 
 .about-text h2 {
   font-size: 1.8rem; /* Slightly larger heading size */
   margin-bottom: 1rem;
-  color: #d1c4fc; /* Light purple */
+  color: #6a0dad; /* Vibrant purple for visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Shadow for visibility */
 }
 
 .about-text p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #bdbdbd;
+  color: #555; /* Neutral gray for readability */
   max-width: 90%; /* Restrict width for better readability */
   margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3); /* Subtle shadow for contrast */
 }
 
 /* Slide-in Animation for Container */
