@@ -1,4 +1,3 @@
-/* General Styles */
 .home-container {
   display: flex;
   justify-content: center;
@@ -59,11 +58,10 @@
 
 .intro h1 {
   font-size: 3rem;
-  color: #b89ef5; /* Match h2 color */
+  color: #ffffff; /* Changed to white */
   margin: 0.5rem 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 6px rgba(184, 158, 245, 0.7); /* Enhance contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 6px rgba(255, 255, 255, 0.7); /* Adjusted for white */
 }
-
 
 .intro h2 {
   font-size: 2rem;
