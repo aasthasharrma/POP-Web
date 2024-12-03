@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <NavLink exact to="/" className="logo-link">
-          <h1>AS</h1>
+          <h1>AASTHA SHARMA</h1>
         </NavLink>
       </div>
       <ul className="nav-links">
